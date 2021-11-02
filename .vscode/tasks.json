@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "compile:tsc",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: compile:tsc",
+			"detail": "tsc --project tsconfig.json"
+		},
+		{
+			"type": "npm",
+			"script": "compile:babel",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: compile:babel",
+			"detail": "npx babel src -w --out-dir lib --extensions .js,.ts"
+		}
+	]
+}
